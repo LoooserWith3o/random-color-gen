@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <h1 style={{ color: color }}>Hello world</h1>
-      <button onClick={() => setColor(randomColor())}> Generate</button>
+      <button onClick={() => setColor(randomColor())}>Generate</button>
       <div>Generated Color: {color} </div>
       {/* <div
         style={{
