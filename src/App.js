@@ -4,19 +4,22 @@ import { useState } from 'react';
 
 function App() {
   const [color, setColor] = useState(randomColor());
+  const generateColor = randomColor('');
   return (
-    <div>
-      <h1 style={{ color: color }}>Hello world</h1>
-      <button onClick={() => setColor(randomColor())}>Generate</button>
-      <div>Generated Color: {color} </div>
-      {/* <div
+    <div className="App">
+      <div
         style={{
+          color: color,
+          backgroundColor: randomColor,
+          width: '500px',
+          height: '500px',
           display: 'flex',
-          padding: '60px',
         }}
-      >
-        Style
-      </div> */}
+      />
+      generatedColor: {generateColor}
+      <br />
+      <button onClick={() => setColor(generateColor)}>Generate Color</button>
+      <br />
     </div>
   );
 }
