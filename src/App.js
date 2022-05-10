@@ -6,20 +6,20 @@ function App() {
   const [color, setColor] = useState(randomColor());
   return (
     <div>
-      <h1 style={{ color: { color } }}>Hello world</h1>
+      <h1 style={{ color: color }}>Hello world</h1>
       <button onClick={() => setColor(randomColor())}>
         {' '}
         Create random Color
       </button>
       <div>Generated Color: {color} </div>
-      <div
+      {/* <div
         style={{
           display: 'flex',
           padding: '60px',
         }}
       >
         Style
-      </div>
+      </div> */}
     </div>
   );
 }
