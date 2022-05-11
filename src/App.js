@@ -7,25 +7,21 @@ function App() {
   const generateColor = randomColor('');
   return (
     <div className="App">
+      <h1 style={{ color: { generateColor } }}>Made with React</h1>
       <div
         style={{
           color: color,
           backgroundColor: color,
+          transition: 0.8,
           width: '500px',
           height: '500px',
           display: 'flex',
           padding: '10px',
           marginleft: 'center',
-        }}
-        container={{
-          height: '100%',
-          width: '100%',
-          display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
         }}
       />
-      generatedColor: {generateColor}
       <div>Generated Color: {generateColor}</div>
       <br />
       <button onClick={() => setColor(generateColor)}>Generate</button>
