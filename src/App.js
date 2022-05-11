@@ -10,10 +10,19 @@ function App() {
       <div
         style={{
           color: color,
-          backgroundColor: randomColor,
+          backgroundColor: color,
           width: '500px',
           height: '500px',
           display: 'flex',
+          padding: '10px',
+          marginleft: 'center',
+        }}
+        container={{
+          height: '100%',
+          width: '100%',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
         }}
       />
       generatedColor: {generateColor}
