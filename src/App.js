@@ -26,6 +26,7 @@ function App() {
         }}
       />
       generatedColor: {generateColor}
+      <div>Generated Color: background color hex code</div>'
       <br />
       <button onClick={() => setColor(generateColor)}>Generate</button>
       <br />
