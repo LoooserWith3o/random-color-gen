@@ -4,15 +4,15 @@ import { useState } from 'react';
 
 function App() {
   const [color, setColor] = useState(randomColor());
-  const generateColor = randomColor('');
+  // const generateColor = randomColor();
   return (
     <div className="App">
-      <h1 style={{ color: { generateColor } }}>Made with React</h1>
+      <h1 style={{ color: color }}>Made with React</h1>
+      <div>Generated Color: {color}</div>
       <div
         style={{
-          color: color,
+          // color: color,
           backgroundColor: color,
-          transition: 0.8,
           width: '500px',
           height: '500px',
           display: 'flex',
@@ -22,9 +22,9 @@ function App() {
           alignItems: 'center',
         }}
       />
-      <div>Generated Color: {generateColor}</div>
+
       <br />
-      <button onClick={() => setColor(generateColor)}>Generate</button>
+      <button onClick={() => setColor(randomColor())}>Generate</button>
       <br />
     </div>
   );
