@@ -8,12 +8,18 @@ function App() {
   return (
     <div className="App">
       <h1 style={{ color: color }}>Made with React</h1>
-      <div>Generated Color: {color}</div>
+      <div
+        style={{
+          backgroundColor: color,
+        }}
+      >
+        Generated Color: {color}
+      </div>
       <div
         style={{
           // color: color,
           backgroundColor: color,
-          width: '500px',
+          width: '100vw',
           height: '500px',
           display: 'flex',
           padding: '10px',
