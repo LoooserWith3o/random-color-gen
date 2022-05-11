@@ -27,7 +27,7 @@ function App() {
       />
       generatedColor: {generateColor}
       <br />
-      <button onClick={() => setColor(generateColor)}>Generate Color</button>
+      <button onClick={() => setColor(generateColor)}>Generate</button>
       <br />
     </div>
   );
